@@ -16,7 +16,7 @@ I rebuilt a WooCommerce store for a sealer manufacturer and took it from 59 to a
 
 I spent four working days on a live Shopify store carrying 29 apps and took it from about 60 to 91 to 95 on mobile, with no design change and every ad pixel and lead pipeline intact. [What came off, and why](https://norvahl.com/learn/resin-rock-shopify-speed).
 
-While chasing a score that would not hold still on that job, I found that Chrome records first paint one to two seconds late on Google's PageSpeed machines when Shopify's head code is present. Two pages, identical but for that code: 0 of 15 runs held, against 9 of 27. Filed as [Lighthouse issue 17230](https://github.com/GoogleChrome/lighthouse/issues/17230) and posted on the [Shopify Community](https://community.shopify.com/t/storefront-head-code-delays-chromes-first-frame-by-1-2-s-on-googles-pagespeed-machines-reproducible-two-page-test/679801).
+That second job turned up a measurement defect in Google's PageSpeed test fleet that affects Shopify storefronts. It is reproduced on a two-page test, 0 of 5 runs held without Shopify's head code and 9 of 27 with it, and reported as [Lighthouse issue 17230](https://github.com/GoogleChrome/lighthouse/issues/17230) and on the [Shopify Community](https://community.shopify.com/t/storefront-head-code-delays-chromes-first-frame-by-1-2-s-on-googles-pagespeed-machines-reproducible-two-page-test/679801).
 
 ### Tools
 
